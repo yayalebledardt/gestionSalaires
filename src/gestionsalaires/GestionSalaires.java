@@ -11,6 +11,11 @@ public class GestionSalaires {
 
         System.out.println(d.getDescription());
         System.out.println(m.getDescription());
+
+        // Ticket ID 9 PayMaster[1448] - Ajout d'employés administratifs
+        Administratif a = new Administratif("Bastide", "Kimy", 3);
+
+        System.out.println(a.getDescription());
     }
 
 }
