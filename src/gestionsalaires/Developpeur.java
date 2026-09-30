@@ -1,6 +1,6 @@
 package gestionsalaires;
 
-public class Developpeur extends employe {
+public class Developpeur extends Employe {
 
     public Developpeur(String nom, String prenom, int anciennete) {
         super(nom, prenom, anciennete, "Developpeur");
