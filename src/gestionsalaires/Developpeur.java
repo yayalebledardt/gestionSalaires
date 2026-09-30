@@ -5,7 +5,12 @@ public class Developpeur extends Employe {
     private String langage;
 
     public Developpeur(String nom, String prenom, int anciennete, String langage) {
-        super(nom, prenom, anciennete, "Developpeur");
+        this(nom, prenom, anciennete, "Developpeur", langage);
+    }
+
+    // Constructeur utilisé par les classes filles pour changer le nom du poste
+    protected Developpeur(String nom, String prenom, int anciennete, String poste, String langage) {
+        super(nom, prenom, anciennete, poste);
         this.langage = langage;
     }
 
@@ -27,7 +32,7 @@ public class Developpeur extends Employe {
     }
 
     @Override
-    public int getSalaire() {
+    public double getSalaire() {
         return 1900 + anciennete * 100 + getPrimeLangage();
     }
 

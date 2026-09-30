@@ -25,6 +25,11 @@ public class GestionSalaires {
         System.out.println(d2.getDescription());
         System.out.println(d3.getDescription());
         System.out.println(d4.getDescription());
+
+        // Ticket ID 11 PayMaster[1449] - Ajout des développeurs experts
+        DeveloppeurExpert de = new DeveloppeurExpert("Baron", "Emma", 1, "php");
+
+        System.out.println(de.getDescription());
     }
 
 }
